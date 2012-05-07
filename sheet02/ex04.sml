@@ -24,7 +24,7 @@ fun find(f, nil)   = false
  * ##################################################### *)
 
 (* 1) *)
-fun member(el, li) = find(fn n => n = el, li);
+fun member(el, set) = find(fn n => n = el, set);
 
 (* specs *)
 assert(member(5, [1,2,3,4,5]),
